@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.sultanofcardio.githubpagesmessages">
+
+    <!--TODO: Change package name above-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:name="com.orm.SugarApp">
+        <activity android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar.MainActivity"
+            android:label="@string/activity_main_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--BEGIN SUGAR META-DATA-->
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="messages.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="false" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="<package_name>.githubpagesmessages" />
+
+        <!--TODO: Enter your package name above-->
+
+        <!--END SUGAR META-DATA-->
+
+    </application>
+
+</manifest>

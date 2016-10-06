@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Github Pages Messages</string>
+    <string name="activity_main_label">Messages</string>
+</resources>

@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. We will not be using this but I left it in to illustrate style inheritance-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--
+
+    By using the dot notation, Android Studio will know that the style below inherits the items from AppTheme
+    This will be our base theme
+
+    -->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--
+
+    The style declarations below are to prevent compilation errors. The real declarations go in
+    -v21 folder.
+
+    Remember to apply all custom styles as a theme in the AndroidManifest.xml
+
+    -->
+
+    <style name="AppTheme.NoActionBar.MainActivity" />
+
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!--
+
+    By placing this styles.xml in the -v21 folder, android studio will compile this for devices running
+    Android 5.0 (API 21) and above, where the items below are supported
+
+    -->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <!--Remember to apply all custom styles as a theme in the  AndroidManifest.xml-->
+
+    <style name="AppTheme.NoActionBar.MainActivity" >
+        <item name="android:statusBarColor">@color/mainActivityPrimaryDark</item>
+    </style>
+
+</resources>
